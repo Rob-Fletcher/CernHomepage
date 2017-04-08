@@ -1,11 +1,4 @@
-import flask
-
-application = flask.Flask(__name__)
-
-@application.route('/')
-def homepage():
-    #return flask.render_template('index.html')
-    return "hello world"
+from myapp import app as application
 
 if __name__=='__main__':
     application.run()
